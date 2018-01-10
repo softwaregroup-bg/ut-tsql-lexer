@@ -1,0 +1,37 @@
+{
+  "name": "ut-tsql-lexer",
+  "version": "1.0.0",
+  "main": "./index",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "ut-tools": "^5.32.0",
+    "pegjs": "^0.10.0"
+  },
+  "scripts": {
+    "lint": "ut-lint .",
+    "release": "ut-release",
+    "changelog": "ut-changelog",
+    "check": "ut-check",
+    "cover": "ut-cover",
+    "lint-js": "ut-lint-js .",
+    "postpublish": "ut-postpublish",
+    "postversion": "ut-postversion",
+    "compile": "pegjs lexer.pegjs index.js",
+    "precommit": "ut-precommit",
+    "prepublish": "ut-prepublish",
+    "prepush": "ut-prepush",
+    "pretest": "ut-pretest",
+    "preversion": "ut-preversion",
+    "test": "ut-test",
+    "version": "ut-version",
+    "jenkins": "ut-jenkins",
+    "gitlab": "ut-gitlab"
+  },
+  "description": "Transact SQL lexer and linter",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:softwaregroup-bg/ut-tsql-lexer.git"
+  },
+  "license": "Apache-2.0"
+}

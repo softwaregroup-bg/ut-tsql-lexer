@@ -1,0 +1,7 @@
+node_modules
+coverage
+*.log
+dist
+tmp
+dev
+index.js
