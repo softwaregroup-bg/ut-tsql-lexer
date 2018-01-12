@@ -157,12 +157,13 @@ lt = "<"
 lte = "<="
 gt = ">"
 gte = ">="
+dotasterisk = ".*"
 asterisk = "*"
 percent = "%"
 slash = "/"
 semicolon = ";"
 caret = "^"
-operator "operator" = caret / plus / minus / comma / equals / decimal_point / slash / ampersand / not_equals / lte / gte / lt / gt / asterisk / percent / semicolon
+operator "operator" = caret / plus / minus / comma / equals / dotasterisk / decimal_point / slash / ampersand / not_equals / lte / gte / lt / gt / asterisk / percent / semicolon
 name "word" =  "[" str:$[^\]]+ "]" {return text()} / '"' $[^"]+ '"' {return text()} / $[A-Za-z0-9_$]+
 system_var "system variable" = "@@" name {return text()}
 variable "variable" = "@" n:name {return text()}
