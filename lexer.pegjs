@@ -15,7 +15,7 @@
         }
     }
 
-    var whitespaceSurround = ['=', '<>', '!=', '>', '<', '+', '-', '*', '/', '&', '<=', '>=', '^'];
+    var whitespaceSurround = ['%=' = '*=', '+=', '-=', '/=', '|=', '^=', '&=', '=', '<>', '!=', '>', '<', '+', '-', '*', '/', '&', '<=', '>=', '^', '|'];
     var whitespaceAfter = [',']
     var listIndent = [',', '(', 'AND', 'OR', 'BY'];
 
@@ -163,7 +163,9 @@ percent = "%"
 slash = "/"
 semicolon = ";"
 caret = "^"
-operator "operator" = caret / plus / minus / comma / equals / dotasterisk / decimal_point / slash / ampersand / not_equals / lte / gte / lt / gt / asterisk / percent / semicolon
+mutate = "%=" / "*=" / "+=" / "-=" / "/=" / "|=" / "^=" / "&="
+pipe = "|"
+operator "operator" = mutate / caret / plus / minus / comma / equals / dotasterisk / decimal_point / slash / ampersand / not_equals / lte / gte / lt / gt / asterisk / percent / pipe / semicolon
 name "word" =  "[" str:$[^\]]+ "]" {return text()} / '"' $[^"]+ '"' {return text()} / $[A-Za-z0-9_$]+
 system_var "system variable" = "@@" name {return text()}
 variable "variable" = "@" n:name {return text()}
