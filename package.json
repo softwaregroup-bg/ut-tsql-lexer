@@ -6,7 +6,7 @@
   },
   "devDependencies": {
     "ut-tools": "^5.32.0",
-    "pegjs": "^0.10.0"
+    "pegjs": "0.10.0"
   },
   "scripts": {
     "lint": "ut-lint .",
