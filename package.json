@@ -17,7 +17,7 @@
     "lint-js": "ut-lint-js .",
     "postpublish": "ut-postpublish",
     "postversion": "ut-postversion",
-    "compile": "pegjs lexer.pegjs index.js",
+    "compile": "pegjs -o index.js lexer.pegjs",
     "precommit": "ut-precommit",
     "prepublish": "ut-prepublish",
     "prepush": "ut-prepush",
