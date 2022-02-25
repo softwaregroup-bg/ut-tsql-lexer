@@ -5,7 +5,8 @@
   "dependencies": {
   },
   "devDependencies": {
-    "ut-tools": "^5.32.0",
+    "tap": "^15.0.9",
+    "ut-tools": "^6.40.2",
     "pegjs": "0.10.0"
   },
   "scripts": {
@@ -19,6 +20,7 @@
     "postversion": "ut-postversion",
     "compile": "pegjs -o index.js lexer.pegjs",
     "precommit": "ut-precommit",
+    "precover": "ut-precover",
     "prepublish": "ut-prepublish",
     "prepush": "ut-prepush",
     "pretest": "ut-pretest",

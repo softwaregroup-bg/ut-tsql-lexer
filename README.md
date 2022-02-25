@@ -19,7 +19,8 @@ try {
 
     parsed.tokens.forEach(line => {
         line.forEach(({
-            type, // whitespace, newline, comment, literal, system, globaltemp, temp, variable, keyword, word, paren, operator
+            type, // whitespace, newline, comment, literal, system, globaltemp,
+                  // temp, variable, keyword, word, paren, operator
             text,
             location
         }) => {
@@ -43,5 +44,6 @@ try {
 - `whitespace-after`: Operator should be followed by single space
 - `indent-step`: Indentation step must not exceed 4
 - `indent-same`: Lines starting with non-keyword must have same indentation
-- `indent-increase`: Lines starting with non-keyword after lines starting with keyword must increas indentation
+- `indent-increase`: Lines starting with non-keyword after lines starting with
+  keyword must increase indentation
 - `indent-after-begin`: Line after BEGIN must increase indentation with 4
