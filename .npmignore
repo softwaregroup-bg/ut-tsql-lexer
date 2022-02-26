@@ -1,0 +1,17 @@
+tmp
+.nyc_output
+.history
+.idea
+.lint
+.tern*
+.ut_*
+*.log
+coverage
+dev
+dist
+node_modules
+npm-debug.*
+package-lock.json
+yarn.lock
+.ut_*rc
+.scannerwork
