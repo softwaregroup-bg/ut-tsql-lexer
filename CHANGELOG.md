@@ -1,3 +1,7 @@
+## [1.5.1](https://github.com/softwaregroup-bg/ut-tsql-lexer/compare/v1.5.0...v1.5.1) (2022-02-26)
+
+
+
 # 1.5.0 (2022-02-26)
 
 
