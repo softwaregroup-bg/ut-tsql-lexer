@@ -1,9 +1,8 @@
 {
   "name": "ut-tsql-lexer",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "main": "./index",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "tap": "^15.0.9",
     "ut-tools": "^6.40.2",
