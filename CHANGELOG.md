@@ -1,3 +1,12 @@
+## [1.5.4](https://github.com/softwaregroup-bg/ut-tsql-lexer/compare/v1.5.3...v1.5.4) (2023-09-29)
+
+
+### Bug Fixes
+
+* add throw keyword ([7d33867](https://github.com/softwaregroup-bg/ut-tsql-lexer/commit/7d33867924007a2344a16d6ed02abf9c7108dab8))
+
+
+
 ## [1.5.3](https://github.com/softwaregroup-bg/ut-tsql-lexer/compare/v1.5.2...v1.5.3) (2022-02-26)
 
 
